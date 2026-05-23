@@ -1,0 +1,5 @@
+print ("Bienvenido a la aplicación para calcular su IMC")
+input ("Ingrese su nombre: Elena")
+input ("Ingrese sus apellidos: Astorga Céspedes")
+input ("Ingrese su peso en kilos: 63")
+input ("Ingrese su altura en metros: 1.65")
