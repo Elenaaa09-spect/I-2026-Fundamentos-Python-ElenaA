@@ -12,6 +12,10 @@ total_inventario = 0
 for i in range (cantidad_productos):
     print("\nProducto", i + 1)
     nombre = input ("Nombre del producto: ")
+    precio = float(input("Ingrese el precio del producto: "))
+    cantidad = int(input("Ingrese la cantidad disponible: "))
+    total = precio * cantidad
+    total_inventario += total
 
 #Validar precio
 while True:
