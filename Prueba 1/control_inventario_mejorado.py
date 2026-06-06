@@ -15,7 +15,10 @@ for i in range (cantidad_productos):
     precio = float(input("Ingrese el precio del producto: "))
     cantidad = int(input("Ingrese la cantidad disponible: "))
     total = precio * cantidad
-    total_inventario += total
+    total_inventario = total_inventario + total
+    print(f"producto : {nombre}")
+    print(f"Total: {total}")
+
 
 #Validar precio
 while True:
@@ -32,16 +35,10 @@ while True:
           break
      else: print ("Error: la cantidad debe de ser mayor que 0")
 
-#Calcular valor total del producto
-valor_total = precio * cantidad
-
-#Acumular al inventario
-total_inventario += valor_total
-
 #Mostrar resultados del producto
 print ("\nResultado")
 print ("Producto:", nombre)
-print ("Valor total:", valor_total)
+print ("Valor total: ", total_inventario)
 
 #Estadística final
 print ("\n==== RESUMEN DEL INVENTARIO ====")
