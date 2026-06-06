@@ -1,6 +1,5 @@
-archivo = open("C:\Users\Personas Invitadas\Desktop\I-2026-Fundamentos-Python-ElenaA\Clase 6\Lectura_actividad4.txt", "w")
+archivo = open("Clase 6\Lectura_actividad4.txt", "w")
 archivo.write("Registro de estudiantes\n")
-archivo.close()
 
 print ("Bienvendo al registro de estudiantes")
 
@@ -16,8 +15,11 @@ for i in range (Estudiantes):
     if Carné <=0:
         print ("ERROR: el carné no puede ser menor a 0")
     elif Nota_final < 0 or Nota_final > 100:
-        print ("ERROR: la nota final debe estar entre 0 y 100")
+        print ("ERROarchivo.writeR: la nota final debe estar entre 0 y 100")
     else:
+        (f"Nombre: {Nombre}, Carné: {Carné}, Nota final: {Nota_final}\n")
         Total_de_estudiantes += 1
+
+archivo.close()
 
 print ("El total de estudiantes registrados es: ", Total_de_estudiantes)

@@ -1,0 +1,3 @@
+Registro de estudiantes
+Nombre: Elena, Carné: 5955, Nota final: 98.0
+Nombre: Drake, Carné: 6845, Nota final: 98.0
