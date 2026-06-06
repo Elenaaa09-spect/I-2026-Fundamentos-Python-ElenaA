@@ -1,7 +1,7 @@
 archivo = open("Clase 6\Lectura_actividad4.txt", "w")
 archivo.write("Registro de estudiantes\n")
 
-print ("Bienvendo al registro de estudiantes")
+print ("Bienvenido al registro de estudiantes")
 
 Estudiantes = int (input ("Ingrese la cantidad de estudiantes que desea registrar: "))
 Total_de_estudiantes = 0
@@ -15,9 +15,9 @@ for i in range (Estudiantes):
     if Carné <=0:
         print ("ERROR: el carné no puede ser menor a 0")
     elif Nota_final < 0 or Nota_final > 100:
-        print ("ERROarchivo.writeR: la nota final debe estar entre 0 y 100")
+        print ("ERROR: la nota final debe estar entre 0 y 100")
     else:
-        (f"Nombre: {Nombre}, Carné: {Carné}, Nota final: {Nota_final}\n")
+        archivo.write(f"Nombre: {Nombre}, Carné: {Carné}, Nota final: {Nota_final}\n")
         Total_de_estudiantes += 1
 
 archivo.close()
