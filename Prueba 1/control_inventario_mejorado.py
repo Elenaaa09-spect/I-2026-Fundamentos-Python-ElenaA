@@ -5,41 +5,29 @@ print ("Sea bienvenido")
 #Solicitar cantidad de productos
 cantidad_productos = int(input("¿Cuántos productos desea registrar?: "))
 
-#Variable para acumular eñ valor total de inventario
+#Variable para acumular el valor total de inventario
 total_inventario = 0
 
 #Ciclo para registrar productos
 for i in range (cantidad_productos):
+
     print("\nProducto", i + 1)
+
     nombre = input ("Nombre del producto: ")
     precio = float(input("Ingrese el precio del producto: "))
     cantidad = int(input("Ingrese la cantidad disponible: "))
-    total = precio * cantidad
-    total_inventario = total_inventario + total
-    print(f"producto : {nombre}")
-    print(f"Total: {total}")
 
-
-#Validar precio
-while True:
-    precio = float(input("Precio del producto: "))
-    if precio > 0 :
-        break
+    if precio <= 0:
+        print ("ERROR: el precio debe de ser mayor que 0")
+    elif cantidad <= 0:
+        print ("ERROR: la cantidad debe de ser mayor que 0")
     else:
-            print ("Error: el precio debe de ser mayor que 0")
+        valor_total = precio * cantidad
 
-#Validar cantidad
-while True:
-     cantidad = int(input("Cantidad disponible: "))
-     if cantidad > 0:
-          break
-     else: print ("Error: la cantidad debe de ser mayor que 0")
+        #Acumular el valor de todos los productos
+        total_inventario += valor_total
+        print ("Producto:", nombre)
+        print ("Valor total:", valor_total)
 
-#Mostrar resultados del producto
-print ("\nResultado")
-print ("Producto:", nombre)
-print ("Valor total: ", total_inventario)
-
-#Estadística final
-print ("\n==== RESUMEN DEL INVENTARIO ====")
-print ("Valor total general del inventario:", total_inventario)
+#Mostar la suma total del inventario
+print ("\nValor total del inventario:", total_inventario)
