@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 print ("Bienvenido a la aplicación para calcular su IMC")
 input ("Ingrese su nombre: ")
 input ("Ingrese sus apellidos: ")
 input ("Ingrese su peso en kilos: ")
 input ("Ingrese su altura en metros: ")
-=======
+
 print ("Bienvenido a la aplicación de cálculo de IMC")
 nombre = input ("Ingrese su nombre:")
 apellidos = input ("Ingrese sus apellidos: ")
@@ -28,4 +27,4 @@ print("Nombre:", nombre, apellidos)
 print("edad:", edad)
 print("IMC:", round(imc, 2))
 print("Clasificación:", clasificacion)
->>>>>>> 3fae1dbf0e6187759865ca5ff605c1757fed670b
+
